@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Portfoli</string>
+    <string name="whoiam">Creating and deploying mobile android \n applications for startups and existing companies</string>
+    <string name="choose" />
+</resources>
