@@ -54,554 +54,200 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="300dp"
-
+        android:layout_height="457dp"
+        android:layout_marginTop="320dp"
         android:background="#18161a"
         android:orientation="vertical">
 
+
         <RelativeLayout
-            android:id="@+id/relativeLayout1"
+            android:id="@+id/relative1"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:layout_margin="0dp"
-            android:layout_marginBottom="0dp"
-            android:gravity="center"
-            android:orientation="horizontal"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.205"
-            tools:layout_editor_absoluteX="30dp">
+            android:layout_height="70dp"
+            android:layout_margin="10dp">
 
-            <ImageView
-
-                android:id="@+id/imageView1a"
-
-                android:layout_width="45dp"
-                android:layout_height="56dp"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_marginEnd="323dp"
-                android:layout_marginRight="323dp"
-                app:srcCompat="@drawable/playstore"
-                tools:layout_editor_absoluteX="46dp"
-                tools:layout_editor_absoluteY="77dp" />
-
-            <ImageView
-                android:id="@+id/imageView1b"
-                android:layout_width="45dp"
-                android:layout_height="56dp"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_marginEnd="236dp"
-                android:layout_marginRight="236dp"
-                app:srcCompat="@drawable/github"
-                tools:layout_editor_absoluteX="46dp"
-                tools:layout_editor_absoluteY="77dp" />
-
-            <ImageView
-                android:id="@+id/imageView1c"
-                android:layout_width="45dp"
-                android:layout_height="56dp"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_marginEnd="136dp"
-                android:layout_marginRight="136dp"
-                app:srcCompat="@drawable/bitbucket"
-                tools:layout_editor_absoluteX="46dp"
-                tools:layout_editor_absoluteY="77dp" />
-
-            <ImageView
-                android:id="@+id/imageView1d"
-                android:layout_width="45dp"
-                android:layout_height="56dp"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_marginEnd="38dp"
-                android:layout_marginRight="38dp"
-                app:srcCompat="@drawable/facebook"
-                tools:layout_editor_absoluteX="46dp"
-                tools:layout_editor_absoluteY="77dp" />
-
-            <TextView
-                android:id="@+id/textView1e"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginEnd="327dp"
-                android:layout_marginRight="327dp"
-                android:layout_marginBottom="12dp"
-                android:fontFamily="@font/baloo"
-                android:text="PlayStore"
-                android:textColor="#939090"
-                android:textSize="8sp"
-                android:textStyle="normal" />
+                android:orientation="horizontal"
+                >
 
-            <TextView
-                android:id="@+id/textView1f"
-                android:layout_width="39dp"
-                android:layout_height="15dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginStart="130dp"
-                android:layout_marginLeft="130dp"
-                android:layout_marginTop="53dp"
-                android:layout_marginEnd="234dp"
-                android:layout_marginRight="234dp"
-                android:layout_marginBottom="12dp"
-                android:fontFamily="@font/baloo"
-                android:text="GitHub"
-                android:textColor="#939090"
-                android:textSize="8sp"
-                android:textStyle="normal" />
+                <ImageView
+                    android:id="@+id/imageView1a"
+                    android:src="@drawable/playstore"
+                    android:layout_width="21dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="2" />
 
-            <TextView
-                android:id="@+id/textView1g"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginEnd="140dp"
-                android:layout_marginRight="140dp"
-                android:layout_marginBottom="15dp"
-                android:fontFamily="@font/baloo"
-                android:text="Bitbucket"
-                android:textColor="#939090"
-                android:textSize="8sp"
-                android:textStyle="normal" />
+                <ImageView
+                    android:id="@+id/imageView1b"
+                    android:layout_width="21dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/github"
+                    android:layout_margin="10dp"
+                    android:layout_weight="2"/>
+                <ImageView
+                    android:id="@+id/imageView1c"
+                    android:src="@drawable/bitbucket"
+                    android:layout_width="21dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="2"/>
+                <ImageView
+                    android:id="@+id/imageView1d"
+                    android:src="@drawable/facebook"
+                    android:layout_width="21dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="2"/>
 
-            <TextView
-                android:id="@+id/textView1h"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginTop="55dp"
-                android:layout_marginEnd="42dp"
-                android:layout_marginRight="42dp"
-                android:layout_marginBottom="11dp"
-                android:fontFamily="@font/baloo"
-                android:text="Facebook"
-                android:textColor="#939090"
-                android:textSize="8sp"
-                android:textStyle="normal" />
-
-
-        </RelativeLayout>
-        <RelativeLayout
-            android:id="@+id/relativeLayout2"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:layout_margin="5dp"
-            android:layout_marginBottom="0dp"
-            android:gravity="center"
-            android:orientation="horizontal"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.205"
-            tools:layout_editor_absoluteX="30dp">
-
-            <ImageView
-
-                android:id="@+id/imageView2a"
-
-                android:layout_width="45dp"
-                android:layout_height="56dp"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_marginEnd="323dp"
-                android:layout_marginRight="323dp"
-                app:srcCompat="@drawable/twitter"
-                tools:layout_editor_absoluteX="46dp"
-                tools:layout_editor_absoluteY="77dp" />
-
-            <ImageView
-                android:id="@+id/imageView2b"
-                android:layout_width="45dp"
-                android:layout_height="56dp"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_marginEnd="235dp"
-                android:layout_marginRight="235dp"
-                app:srcCompat="@drawable/instagram"
-                tools:layout_editor_absoluteX="46dp"
-                tools:layout_editor_absoluteY="77dp" />
-
-            <ImageView
-                android:id="@+id/imageView2c"
-                android:layout_width="45dp"
-                android:layout_height="56dp"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_marginEnd="134dp"
-                android:layout_marginRight="134dp"
-                app:srcCompat="@drawable/gplus"
-                tools:layout_editor_absoluteX="46dp"
-                tools:layout_editor_absoluteY="77dp" />
-
-            <ImageView
-                android:id="@+id/imageView2d"
-                android:layout_width="45dp"
-                android:layout_height="56dp"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_marginEnd="40dp"
-                android:layout_marginRight="40dp"
-                app:srcCompat="@drawable/youtube"
-                tools:layout_editor_absoluteX="46dp"
-                tools:layout_editor_absoluteY="77dp" />
-
-            <TextView
-                android:id="@+id/textView2e"
-                android:layout_width="37dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginStart="39dp"
-                android:layout_marginLeft="39dp"
-                android:layout_marginEnd="327dp"
-                android:layout_marginRight="327dp"
-                android:layout_marginBottom="12dp"
-                android:fontFamily="@font/baloo"
-                android:text="Twitter"
-                android:textColor="#939090"
-                android:textSize="8sp"
-                android:textStyle="normal" />
-
-            <TextView
-                android:id="@+id/textView2f"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginEnd="238dp"
-                android:layout_marginRight="238dp"
-                android:layout_marginBottom="11dp"
-                android:fontFamily="@font/baloo"
-                android:text="Instagram"
-                android:textColor="#939090"
-                android:textSize="8sp"
-                android:textStyle="normal" />
-
-            <TextView
-                android:id="@+id/textView2g"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginEnd="135dp"
-                android:layout_marginRight="135dp"
-                android:layout_marginBottom="12dp"
-                android:fontFamily="@font/baloo"
-                android:text="Google Plus"
-                android:textColor="#939090"
-                android:textSize="8sp"
-                android:textStyle="normal" />
-
-            <TextView
-                android:id="@+id/textView2h"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginEnd="46dp"
-                android:layout_marginRight="46dp"
-                android:layout_marginBottom="12dp"
-                android:fontFamily="@font/baloo"
-                android:text="Youtube"
-                android:textColor="#939090"
-                android:textSize="8sp"
-                android:textStyle="normal" />
-
-
-        </RelativeLayout>
-        <RelativeLayout
-            android:id="@+id/relativeLayout3"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:layout_margin="5dp"
-            android:layout_marginBottom="0dp"
-            android:gravity="center"
-            android:orientation="horizontal"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.205"
-            tools:layout_editor_absoluteX="30dp">
-
-            <ImageView
-
-                android:id="@+id/imageView3a"
-
-                android:layout_width="48dp"
-                android:layout_height="50dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_marginStart="32dp"
-                android:layout_marginLeft="32dp"
-                android:layout_marginEnd="323dp"
-                android:layout_marginRight="323dp"
-                app:srcCompat="@drawable/dribble"
-                tools:layout_editor_absoluteX="46dp"
-                tools:layout_editor_absoluteY="77dp" />
-
-            <ImageView
-                android:id="@+id/imageView3b"
-                android:layout_width="49dp"
-                android:layout_height="50dp"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_marginEnd="234dp"
-                android:layout_marginRight="234dp"
-                app:srcCompat="@drawable/linkden"
-                tools:layout_editor_absoluteX="46dp"
-                tools:layout_editor_absoluteY="77dp" />
-
-            <ImageView
-                android:id="@+id/imageView3c"
-                android:layout_width="47dp"
-                android:layout_height="49dp"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_marginEnd="133dp"
-                android:layout_marginRight="133dp"
-                app:srcCompat="@drawable/gmail"
-                tools:layout_editor_absoluteX="46dp"
-                tools:layout_editor_absoluteY="77dp" />
-
-            <ImageView
-                android:id="@+id/imageView3d"
-                android:layout_width="51dp"
-                android:layout_height="50dp"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_marginEnd="34dp"
-                android:layout_marginRight="34dp"
-                app:srcCompat="@drawable/whatsapp"
-                tools:layout_editor_absoluteX="46dp"
-                tools:layout_editor_absoluteY="77dp" />
-
-            <TextView
-                android:id="@+id/textView3e"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginEnd="333dp"
-                android:layout_marginRight="333dp"
-                android:layout_marginBottom="18dp"
-                android:fontFamily="@font/baloo"
-                android:text="Dribble"
-                android:textColor="#939090"
-                android:textSize="8sp"
-                android:textStyle="normal" />
-
-            <TextView
-                android:id="@+id/textView3f"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginEnd="242dp"
-                android:layout_marginRight="242dp"
-                android:layout_marginBottom="16dp"
-                android:fontFamily="@font/baloo"
-                android:text="Linkedin"
-                android:textColor="#939090"
-                android:textSize="8sp"
-                android:textStyle="normal" />
-
-            <TextView
-                android:id="@+id/textView3g"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginEnd="147dp"
-                android:layout_marginRight="147dp"
-                android:layout_marginBottom="16dp"
-                android:fontFamily="@font/baloo"
-                android:text="Email"
-                android:textColor="#939090"
-                android:textSize="8sp"
-                android:textStyle="normal" />
-
-            <TextView
-                android:id="@+id/textView3h"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginEnd="38dp"
-                android:layout_marginRight="38dp"
-                android:layout_marginBottom="15dp"
-                android:fontFamily="@font/baloo"
-                android:text="Whatsapp"
-                android:textColor="#939090"
-                android:textSize="8sp"
-                android:textStyle="normal" />
-
-
-        </RelativeLayout>
-        <RelativeLayout
-            android:id="@+id/relativeLayout4"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:layout_margin="5dp"
-            android:layout_marginBottom="0dp"
-            android:gravity="center"
-            android:orientation="horizontal"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.205"
-            tools:layout_editor_absoluteX="30dp">
-
-            <ImageView
-
-                android:id="@+id/imageView4a"
-
-                android:layout_width="45dp"
-                android:layout_height="56dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_marginStart="32dp"
-                android:layout_marginLeft="32dp"
-                android:layout_marginEnd="325dp"
-                android:layout_marginRight="325dp"
-                app:srcCompat="@drawable/skype"
-                tools:layout_editor_absoluteX="46dp"
-                tools:layout_editor_absoluteY="77dp" />
-
-            <ImageView
-                android:id="@+id/imageView4b"
-                android:layout_width="45dp"
-                android:layout_height="56dp"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_marginEnd="234dp"
-                android:layout_marginRight="234dp"
-                app:srcCompat="@drawable/google"
-                tools:layout_editor_absoluteX="46dp"
-                tools:layout_editor_absoluteY="77dp" />
-
-            <ImageView
-                android:id="@+id/imageView4c"
-                android:layout_width="45dp"
-                android:layout_height="56dp"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_marginEnd="134dp"
-                android:layout_marginRight="134dp"
-                app:srcCompat="@drawable/android"
-                tools:layout_editor_absoluteX="46dp"
-                tools:layout_editor_absoluteY="77dp" />
-
-            <ImageView
-                android:id="@+id/imageView4d"
-                android:layout_width="45dp"
-                android:layout_height="56dp"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_marginEnd="37dp"
-                android:layout_marginRight="37dp"
-                app:srcCompat="@drawable/website"
-                tools:layout_editor_absoluteX="46dp"
-                tools:layout_editor_absoluteY="77dp" />
-
-            <TextView
-                android:id="@+id/textView4e"
-                android:layout_width="30dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginStart="40dp"
-                android:layout_marginLeft="40dp"
-                android:layout_marginEnd="332dp"
-                android:layout_marginRight="332dp"
-                android:layout_marginBottom="12dp"
-                android:fontFamily="@font/baloo"
-                android:text="Skype"
-                android:textColor="#939090"
-                android:textSize="8sp"
-                android:textStyle="normal" />
-
-            <TextView
-                android:id="@+id/textViewf"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginEnd="242dp"
-                android:layout_marginRight="242dp"
-                android:layout_marginBottom="12dp"
-                android:fontFamily="@font/baloo"
-                android:text="Google"
-                android:textColor="#939090"
-                android:textSize="8sp"
-                android:textStyle="normal" />
-
-            <TextView
-                android:id="@+id/textView4g"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginEnd="142dp"
-                android:layout_marginRight="142dp"
-                android:layout_marginBottom="11dp"
-                android:fontFamily="@font/baloo"
-                android:text="Android"
-                android:textColor="#939090"
-                android:textSize="8sp"
-                android:textStyle="normal" />
-
-            <TextView
-                android:id="@+id/textView4h"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginEnd="44dp"
-                android:layout_marginRight="44dp"
-                android:layout_marginBottom="10dp"
-                android:fontFamily="@font/baloo"
-                android:text="Website"
-                android:textColor="#939090"
-                android:textSize="8sp"
-                android:textStyle="normal" />
+            </LinearLayout>
 
 
         </RelativeLayout>
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/imageView2a"
+                    android:src="@drawable/twitter"
+                    android:layout_width="21dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="2" />
+
+                <ImageView
+                    android:id="@+id/imageView2b"
+                    android:layout_width="21dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/instagram"
+                    android:layout_margin="10dp"
+                    android:layout_weight="2"/>
+                <ImageView
+                    android:id="@+id/imageView2c"
+                    android:src="@drawable/googleplus"
+                    android:layout_width="21dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="2"/>
+                <ImageView
+                    android:id="@+id/imageView2d"
+                    android:src="@drawable/youtube"
+                    android:layout_width="21dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="2"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/imageView3a"
+                    android:src="@drawable/dribble"
+                    android:layout_width="21dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="2" />
+
+                <ImageView
+                    android:id="@+id/imageView3b"
+                    android:layout_width="21dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/linkden"
+                    android:layout_margin="10dp"
+                    android:layout_weight="2"/>
+                <ImageView
+                    android:id="@+id/imageView3c"
+                    android:src="@drawable/gmail"
+                    android:layout_width="21dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="2"/>
+                <ImageView
+                    android:id="@+id/imageView3d"
+                    android:src="@drawable/whatsapp"
+                    android:layout_width="21dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="2"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/imageView4a"
+                    android:src="@drawable/skype"
+                    android:layout_width="21dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="2" />
+
+                <ImageView
+                    android:id="@+id/imageView4b"
+                    android:layout_width="21dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/google"
+                    android:layout_margin="10dp"
+                    android:layout_weight="2"/>
+                <ImageView
+                    android:id="@+id/imageView4c"
+                    android:src="@drawable/android"
+                    android:layout_width="21dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="2"/>
+                <ImageView
+                    android:id="@+id/imageView4d"
+                    android:src="@drawable/website"
+                    android:layout_width="21dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="2"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </LinearLayout>
+
+
 
 </RelativeLayout>
