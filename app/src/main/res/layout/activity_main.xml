@@ -63,7 +63,7 @@
         <RelativeLayout
             android:id="@+id/relative1"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="80dp"
             android:layout_margin="10dp">
 
             <LinearLayout
@@ -75,41 +75,86 @@
                 <ImageView
                     android:id="@+id/imageView1a"
                     android:src="@drawable/playstore"
-                    android:layout_width="21dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
                     android:layout_margin="10dp"
                     android:layout_weight="2" />
 
                 <ImageView
                     android:id="@+id/imageView1b"
-                    android:layout_width="21dp"
-                    android:layout_height="match_parent"
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
                     android:src="@drawable/github"
                     android:layout_margin="10dp"
                     android:layout_weight="2"/>
                 <ImageView
                     android:id="@+id/imageView1c"
                     android:src="@drawable/bitbucket"
-                    android:layout_width="21dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
                     android:layout_margin="10dp"
                     android:layout_weight="2"/>
                 <ImageView
                     android:id="@+id/imageView1d"
                     android:src="@drawable/facebook"
-                    android:layout_width="21dp"
-                    android:layout_height="match_parent"
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
                     android:layout_margin="10dp"
                     android:layout_weight="2"/>
 
             </LinearLayout>
 
+            <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="58dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="PlayStore"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="Github"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:layout_width="33dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="Bitbucket"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="Facebook"
+                    android:textColor="#fff" />
+            </LinearLayout>
+        </RelativeLayout>
 
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="80dp"
             android:layout_margin="10dp">
 
             <LinearLayout
@@ -121,39 +166,83 @@
                 <ImageView
                     android:id="@+id/imageView2a"
                     android:src="@drawable/twitter"
-                    android:layout_width="21dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
                     android:layout_margin="10dp"
                     android:layout_weight="2" />
 
                 <ImageView
                     android:id="@+id/imageView2b"
-                    android:layout_width="21dp"
-                    android:layout_height="match_parent"
+                    android:layout_width="41dp"
+                    android:layout_height="35dp"
                     android:src="@drawable/instagram"
                     android:layout_margin="10dp"
                     android:layout_weight="2"/>
                 <ImageView
                     android:id="@+id/imageView2c"
                     android:src="@drawable/googleplus"
-                    android:layout_width="21dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
                     android:layout_margin="10dp"
                     android:layout_weight="2"/>
                 <ImageView
                     android:id="@+id/imageView2d"
                     android:src="@drawable/youtube"
-                    android:layout_width="21dp"
-                    android:layout_height="match_parent"
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
                     android:layout_margin="10dp"
                     android:layout_weight="2"/>
 
             </LinearLayout>
+            <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="58dp">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="Twitter"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="Instagram"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:layout_width="33dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="Google+"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="YouTube"
+                    android:textColor="#fff" />
+            </LinearLayout>
+        </RelativeLayout>
         </RelativeLayout>
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="80dp"
             android:layout_margin="10dp">
 
             <LinearLayout
@@ -165,39 +254,84 @@
                 <ImageView
                     android:id="@+id/imageView3a"
                     android:src="@drawable/dribble"
-                    android:layout_width="21dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
                     android:layout_margin="10dp"
                     android:layout_weight="2" />
 
                 <ImageView
                     android:id="@+id/imageView3b"
-                    android:layout_width="21dp"
-                    android:layout_height="match_parent"
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
                     android:src="@drawable/linkden"
                     android:layout_margin="10dp"
                     android:layout_weight="2"/>
                 <ImageView
                     android:id="@+id/imageView3c"
                     android:src="@drawable/gmail"
-                    android:layout_width="21dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
                     android:layout_margin="10dp"
                     android:layout_weight="2"/>
                 <ImageView
                     android:id="@+id/imageView3d"
                     android:src="@drawable/whatsapp"
-                    android:layout_width="21dp"
-                    android:layout_height="match_parent"
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
                     android:layout_margin="10dp"
                     android:layout_weight="2"/>
 
             </LinearLayout>
 
+            <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="58dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="Dribble"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="Linkedin"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:layout_width="33dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="Gmail"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="Whatsapp"
+                    android:textColor="#fff" />
+            </LinearLayout>
+        </RelativeLayout>
         </RelativeLayout>
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="80dp"
             android:layout_margin="10dp">
 
             <LinearLayout
@@ -209,42 +343,81 @@
                 <ImageView
                     android:id="@+id/imageView4a"
                     android:src="@drawable/skype"
-                    android:layout_width="21dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
                     android:layout_margin="10dp"
                     android:layout_weight="2" />
 
                 <ImageView
                     android:id="@+id/imageView4b"
-                    android:layout_width="21dp"
-                    android:layout_height="match_parent"
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
                     android:src="@drawable/google"
                     android:layout_margin="10dp"
                     android:layout_weight="2"/>
                 <ImageView
                     android:id="@+id/imageView4c"
                     android:src="@drawable/android"
-                    android:layout_width="21dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
                     android:layout_margin="10dp"
                     android:layout_weight="2"/>
                 <ImageView
                     android:id="@+id/imageView4d"
                     android:src="@drawable/website"
-                    android:layout_width="21dp"
-                    android:layout_height="match_parent"
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
                     android:layout_margin="10dp"
                     android:layout_weight="2"/>
 
             </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="58dp">
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="Skype"
+                        android:textColor="#fff" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="Google"
+                        android:textColor="#fff" />
+
+                    <TextView
+                        android:layout_width="33dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="Android"
+                        android:textColor="#fff" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="Website"
+                        android:textColor="#fff" />
+                </LinearLayout>
+            </RelativeLayout>
         </RelativeLayout>
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </LinearLayout>
 
