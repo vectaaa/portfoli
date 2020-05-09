@@ -1,20 +1,34 @@
 package com.example.portfoli
 
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
-
+    lateinit var pref:SharedPreferences
     val TAG ="Main Activity"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+
+
+
+
         Log.d(TAG, "In Oncreate")
 
+        pref=getSharedPreferences(RegisterActivity.PREF_NAME,Context.MODE_PRIVATE)
+        val show:String? =pref.getString("usermail","")
+        val showMail:TextView?=findViewById(R.id.desc)
+            if (showMail != null) {
+                showMail.text=show
+            }
 
         imageView1a.setOnClickListener {
             val intent = Intent(
@@ -143,6 +157,10 @@ class MainActivity : AppCompatActivity() {
             if (intent.resolveActivity(packageManager) != null)
                 startActivity(chooser)
         }
+    }
+
+    private fun getText(outputName: TextView?) {
+
     }
 
     override fun onStart() {
