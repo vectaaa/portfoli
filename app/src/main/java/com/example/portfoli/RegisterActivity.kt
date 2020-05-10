@@ -30,9 +30,9 @@ class RegisterActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
 
-        usernameTv = findViewById(R.id.username)
-        emailTv = findViewById(R.id.useremail)
-        passwordTv = findViewById(R.id.password)
+        usernameTv = findViewById(R.id.reg_username)
+        emailTv = findViewById(R.id.reg_useremail)
+        passwordTv = findViewById(R.id.reg_password)
         registerbtn = findViewById(R.id.register)
         loginText = findViewById(R.id.login_text)
 
