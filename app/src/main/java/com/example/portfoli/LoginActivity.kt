@@ -24,8 +24,8 @@ import com.example.portfoli.RegisterActivity.Companion.PREF_NAME
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-         emailEdt=findViewById(R.id.username)
-         passwordEdt=findViewById(R.id.password)
+         emailEdt=findViewById(R.id.log_username)
+         passwordEdt=findViewById(R.id.log_password)
          loginBtn=findViewById(R.id.login)
          signUpTxt=findViewById(R.id.signUpText)
 
