@@ -14,7 +14,7 @@ class RegisterActivity : AppCompatActivity() {
             const val UserName ="username"
             const val Password = "password"
             const val UserDetails = "userDetails"
-            const val PREF_NAME = "com.com.example.portfoli.SharePreference"
+            const val PREF_NAME = "com.example.portfoli.SharePreference"
         }
 
     lateinit var usernameTv: TextView
