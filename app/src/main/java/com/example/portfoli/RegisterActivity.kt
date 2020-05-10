@@ -10,11 +10,11 @@ import android.widget.*
 
 class RegisterActivity : AppCompatActivity() {
         companion object {
-            const val Email = "email"
-            const val UserName ="username"
-            const val Password = "password"
-            const val UserDetails = "userDetails"
-            const val PREF_NAME = "com.com.example.portfoli.SharePreference"
+            const val EMAIL = "email"
+            const val USERNAME ="username"
+            const val PASSWORD = "password"
+            const val USERDETAILS = "userDetails"
+            const val PREF_NAME = "com.example.portfoli.SharePreference"
         }
 
     lateinit var usernameTv: TextView
@@ -30,10 +30,10 @@ class RegisterActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
 
-        usernameTv = findViewById(R.id.username)
-        emailTv = findViewById(R.id.useremail)
-        passwordTv = findViewById(R.id.password)
-        registerbtn = findViewById(R.id.register)
+        usernameTv = findViewById(R.id.reg_username)
+        emailTv = findViewById(R.id.reg_usermail)
+        passwordTv = findViewById(R.id.reg_password)
+        registerbtn = findViewById(R.id.registerBtn)
         loginText = findViewById(R.id.login_text)
 
 
@@ -51,21 +51,21 @@ class RegisterActivity : AppCompatActivity() {
         var userName:String=usernameTv.text.toString()
         var email:String=emailTv.text.toString()
         var password:String=passwordTv.text.toString()
-        val pref:SharedPreferences= getSharedPreferences(PREF_NAME,Context.MODE_PRIVATE)
+        val pref:SharedPreferences= getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE)
         val editor:SharedPreferences.Editor=pref.edit()
-            editor.putString(UserName, userName)
-            editor.putString(Email, email)
-            editor.putString(Password, password)
-            editor.putString(UserDetails, email)
+            editor.putString(USERNAME, userName)
+            editor.putString(EMAIL, email)
+            editor.putString(PASSWORD, password)
+            editor.putString(USERDETAILS, email)
             editor.apply()
         var housefly= Intent(this, LoginActivity::class.java)
             startActivity(housefly)
             finish()
-            Toast.makeText(this,"Success", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this,"Registration Successful", Toast.LENGTH_SHORT).show()
 
 
     }
 
-        }
+}
 
 

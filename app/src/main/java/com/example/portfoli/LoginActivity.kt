@@ -20,13 +20,14 @@ import com.example.portfoli.RegisterActivity.Companion.PREF_NAME
      lateinit var signUpTxt: TextView
 
      /*private val sharedPrefFile = "ktsharedprefrence"*/
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-         emailEdt=findViewById(R.id.username)
-         passwordEdt=findViewById(R.id.password)
-         loginBtn=findViewById(R.id.login)
+         emailEdt=findViewById(R.id.log_usermail)
+         passwordEdt=findViewById(R.id.log_password)
+         loginBtn=findViewById(R.id.loginBtn)
          signUpTxt=findViewById(R.id.signUpText)
 
 
@@ -39,12 +40,12 @@ import com.example.portfoli.RegisterActivity.Companion.PREF_NAME
          }}
 
          private fun loginFun() {
-             var email: String = emailEdt.text.toString()
-             var password: String = passwordEdt.text.toString()
-             var pref: SharedPreferences =
-                 getSharedPreferences(RegisterActivity.PREF_NAME, Context.MODE_PRIVATE)
-             var getEmail: String? = pref.getString(RegisterActivity.Email, null)
-             var getPassword: String? = pref.getString(RegisterActivity.Password, null)
+             var email:String = emailEdt.text.toString()
+             var password:String = passwordEdt.text.toString()
+             var pref:SharedPreferences =
+                 getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE)
+             var getEmail:String? = pref.getString(RegisterActivity.EMAIL, null)
+             var getPassword: String? = pref.getString(RegisterActivity.PASSWORD, null)
 
              var editor: SharedPreferences.Editor = pref.edit()
              editor.putString("usermail", getEmail)

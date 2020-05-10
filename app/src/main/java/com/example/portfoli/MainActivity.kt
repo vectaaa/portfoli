@@ -12,6 +12,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     lateinit var pref:SharedPreferences
+
     val TAG ="Main Activity"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,10 +25,10 @@ class MainActivity : AppCompatActivity() {
         Log.d(TAG, "In Oncreate")
 
         pref=getSharedPreferences(RegisterActivity.PREF_NAME,Context.MODE_PRIVATE)
-        val show:String? =pref.getString("usermail","")
-        val showMail:TextView?=findViewById(R.id.desc)
-            if (showMail != null) {
-                showMail.text=show
+        val show: String? =pref.getString("usermail","")
+        val showEmail:TextView?=findViewById(R.id.desc)
+            if (showEmail != null) {
+                showEmail.text=show
             }
 
         imageView1a.setOnClickListener {
