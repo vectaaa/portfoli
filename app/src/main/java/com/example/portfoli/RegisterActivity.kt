@@ -10,10 +10,10 @@ import android.widget.*
 
 class RegisterActivity : AppCompatActivity() {
         companion object {
-            const val Email = "email"
-            const val UserName ="username"
-            const val Password = "password"
-            const val UserDetails = "userDetails"
+            const val EMAIL = "email"
+            const val USERNAME ="username"
+            const val PASSWORD = "password"
+            const val USERDETAILS = "userDetails"
             const val PREF_NAME = "com.example.portfoli.SharePreference"
         }
 
@@ -53,10 +53,10 @@ class RegisterActivity : AppCompatActivity() {
         var password:String=passwordTv.text.toString()
         val pref:SharedPreferences= getSharedPreferences(PREF_NAME,Context.MODE_PRIVATE)
         val editor:SharedPreferences.Editor=pref.edit()
-            editor.putString(UserName, userName)
-            editor.putString(Email, email)
-            editor.putString(Password, password)
-            editor.putString(UserDetails, email)
+            editor.putString(USERNAME, userName)
+            editor.putString(EMAIL, email)
+            editor.putString(PASSWORD, password)
+            editor.putString(USERDETAILS, email)
             editor.apply()
         var housefly= Intent(this, LoginActivity::class.java)
             startActivity(housefly)
