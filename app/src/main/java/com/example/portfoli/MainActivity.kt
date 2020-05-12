@@ -23,13 +23,16 @@ class MainActivity : AppCompatActivity() {
 
 
         Log.d(TAG, "In Oncreate")
-
+//Shared preference area start
         pref=getSharedPreferences(RegisterActivity.PREF_NAME,Context.MODE_PRIVATE)
         val show: String? =pref.getString("usermail","")
         val showEmail:TextView?=findViewById(R.id.desc)
             if (showEmail != null) {
                 showEmail.text=show
             }
+//Shared prefrence area stop
+
+//on click listener for every icon start
 
         imageView1a.setOnClickListener {
             val intent = Intent(
@@ -160,10 +163,13 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+
     private fun getText(outputName: TextView?) {
 
     }
 
+
+//Activity life cycle area.
     override fun onStart() {
         super.onStart()
         Log.d(TAG, "In Onstart")
