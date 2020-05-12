@@ -14,6 +14,9 @@ import com.example.portfoli.RegisterActivity.Companion.PREF_NAME
 
 
  class LoginActivity : AppCompatActivity() {
+
+//Declaration of variables.
+
      lateinit var emailEdt:EditText
      lateinit var passwordEdt:EditText
      lateinit var loginBtn: Button
@@ -24,12 +27,13 @@ import com.example.portfoli.RegisterActivity.Companion.PREF_NAME
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
-
+// Find view by i.d area.
          emailEdt=findViewById(R.id.log_usermail)
          passwordEdt=findViewById(R.id.log_password)
          loginBtn=findViewById(R.id.loginBtn)
          signUpTxt=findViewById(R.id.signUpText)
 
+//on click listener area
 
          signUpTxt.setOnClickListener{
              var frog = Intent(this, RegisterActivity::class.java)
